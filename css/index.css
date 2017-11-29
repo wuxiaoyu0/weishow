@@ -1,0 +1,408 @@
+@-webkit-keyframes rotateAni {
+  from{
+    -webkit-transform:rotate(0deg);
+            transform:rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(3600deg);
+            transform: rotate(3600deg);
+  }
+}
+@keyframes rotateAni {
+  from{
+    -webkit-transform:rotate(0deg);
+            transform:rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(3600deg);
+            transform: rotate(3600deg);
+  }
+}
+@-webkit-keyframes up {
+  from{
+    -webkit-transform:translateY(0px);
+            transform:translateY(0px);
+    opacity: 1;
+  }
+  to{
+    -webkit-transform:translateY(-25px);
+            transform:translateY(-25px);
+    opacity: 0;
+  }
+}
+@keyframes up {
+  from{
+    -webkit-transform:translateY(0px);
+            transform:translateY(0px);
+    opacity: 1;
+  }
+  to{
+    -webkit-transform:translateY(-25px);
+            transform:translateY(-25px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes scalebg {
+  from{
+    -webkit-transform:scale(1,1);
+            transform:scale(1,1);
+  }
+  to{
+    -webkit-transform:scale(1.2,1.2);
+            transform:scale(1.2,1.2);
+  }
+}
+@keyframes scalebg {
+  from{
+    -webkit-transform:scale(1,1);
+            transform:scale(1,1);
+  }
+  to{
+    -webkit-transform:scale(1.2,1.2);
+            transform:scale(1.2,1.2);
+  }
+}
+.musicBtn{
+  width:10vw;
+  height:10vw;
+  border-radius: 50%;
+  background: url(../img/music_off.png) no-repeat center center;
+  position: fixed;
+  right:15px;
+  top:15px;
+  z-index: 999;
+}
+.btnAni{
+  -webkit-animation: rotateAni 8s linear 0s infinite;
+          animation: rotateAni 8s linear 0s infinite;
+}
+.musicControl{
+  width:15vw;
+  height:15vw;
+  position: fixed;
+  right:15px;
+  top:15px;
+  z-index: 999;
+}
+.musicControl .music_gif{
+  width:3rem;
+  height:3rem;
+  position: fixed;
+  right:0px;
+  top:5px;
+  z-index: 1000;
+  background: url(../img/music_c.gif) no-repeat center center;
+}
+.up{
+  width: 100%;
+  height: 18px;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  -webkit-animation: up  1.5s ease-in-out 0s infinite;
+          animation: up  1.5s ease-in-out 0s infinite;
+  z-index: 999;
+}
+.up>img{
+  display: inline-block;
+}
+html,body{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+a, div {
+    -webkit-tap-highlight-color: transparent;
+}
+@media screen and (min-width: 768px) {
+    body{
+        width: 768px;
+    }
+}
+img{
+    display: block;
+    height: auto;
+    position: absolute;
+}
+.swiper-container{
+    height: 100%;
+    overflow: hidden;
+}
+.swiper-container .swiper-slide{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #f6bb43;
+}
+.page1_font1{
+  width:55vw;
+  height:13vh;
+  position:absolute;
+  left:10vw;
+  top:8vh;
+  background:url(../img/page1_font1.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page1_qiqiu{
+  width:14vw;
+  height:12vh;
+  position:absolute;
+  left:72vw;
+  top:5vh;
+  background:url(../img/page1_qiqiu.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page1_font2{
+  width:66vw;
+  height: 19vh;
+  position:absolute;
+  left:27vw;
+  top:22vh;
+  background:url(../img/page1_font2.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page1_font3{
+  width:64vw;
+  height: 5vh;
+  position:absolute;
+  left:18vw;
+  top:46vh;
+  background:url(../img/page1_font3.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page1_font4{
+  width:42vw;
+  height: 9vh;
+  position:absolute;
+  left:35.5vw;
+  top:25vh;
+  background:url(../img/page1_font4.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page1_yun{
+  width:38vw;
+  height: 11vh;
+  position:absolute;
+  left:9vw;
+  top:57vh;
+  background:url(../img/page1_yun.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page1_man{
+  width:21vw;
+  height: 41vh;
+  position:absolute;
+  left:60vw;
+  top:54vh;
+  background:url(../img/page1_man.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.yun_bg{
+  width:60vw;
+  height: 18vh;
+  position:absolute;
+  left:10vw;
+  top:7vh;
+  background:url(../img/page2_bg.png) no-repeat center center;
+  background-size: 100% 100%;
+  text-align: center;
+  line-height: 18vh;
+}
+.page2_title{
+  font-size:1.5rem;
+  color:rgb(30, 30, 30);
+  margin-top: 5vh;
+}
+.page2_title p{
+  line-height: normal;
+}
+.page2_reqiqiu1{
+  width:12vw;
+  height:10vh;
+  position:absolute;
+  left:68vw;
+  top:9vh;
+  background:url(../img/page2_reqiqiu1.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page2_reqiqiu2{
+  width:8vw;
+  height: 7vh;
+  position:absolute;
+  left:8vw;
+  top:30vh;
+  background:url(../img/page2_reqiqiu2.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page2_num1{
+  width:26vw;
+  height:7vh;
+  position:absolute;
+  left:56vw;
+  top:25.5vh;
+  background:url(../img/page2_num1.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page2_font1{
+  width:48vw;
+  position:absolute;
+  left:50vw;
+  top:35vh;
+  color:#fff;
+  font-size: 1.3rem;
+}
+.page2_num2{
+  width:26vw;
+  height:7vh;
+  position:absolute;
+  left:60vw;
+  top:53vh;
+  background:url(../img/page2_num2.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page2_font2{
+  width:44vw;
+  position:absolute;
+  left:56vw;
+  top:62vh;
+  color:#fff;
+  font-size: 1.3rem;
+}
+.page2_reqiqiu3{
+  width:11vw;
+  height:10vh;
+  position:absolute;
+  left:46vw;
+  top:75vh;
+  background:url(../img/page2_reqiqiu1.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page2_man{
+  width:25vw;
+  height: 52vh;
+  position:absolute;
+  left:10vw;
+  top:38vh;
+  background:url(../img/page2_man.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page3_reqiqiu1{
+  width:8.4vw;
+  height: 7vh;
+  position:absolute;
+  left:4.3vw;
+  top:25.3vh;
+  background:url(../img/page2_reqiqiu2.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page3_reqiqiu2{
+  width:11.8vw;
+  height:10vh;
+  position:absolute;
+  left:84vw;
+  top:76vh;
+  background:url(../img/page2_reqiqiu1.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page3_num1{
+  width:27vw;
+  height:7vh;
+  position:absolute;
+  left:40.6vw;
+  top:33.3vh;
+  background:url(../img/page3_num3.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page3_font1{
+  width:56vw;
+  position:absolute;
+  left:6vw;
+  top:41.6vh;
+  color:#fff;
+  font-size: 1.3rem;
+}
+.page3_num2{
+  width:27vw;
+  height:7vh;
+  position:absolute;
+  left:5.8vw;
+  top:52vh;
+  background:url(../img/page3_mun4.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page3_font2{
+  width:66.5vw;
+  position:absolute;
+  left:20vw;
+  top:62vh;
+  color:#fff;
+  font-size: 1.3rem;
+}
+.page3_reqiqiu3{
+  width:11vw;
+  height:10vh;
+  position:absolute;
+  left:84.6vw;
+  top:76vh;
+  background:url(../img/page2_reqiqiu1.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page3_man{
+  width:21vw;
+  height: 41.6vh;
+  position:absolute;
+  left:74vw;
+  top:24vh;
+  background:url(../img/page3_man.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slide4{
+  background: url(../img/page4_bg.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.page4_font1{
+  width:100%;
+  text-align: center;
+  position:absolute;
+  left:1vw;
+  top:46vh;
+  color:#666;
+  font-size: 1.3rem;
+}
+.page4_font2{
+  width:87vw;
+  height:12.7vw;
+  position:absolute;
+  left:8vw;
+  top:56.6vh;
+  background: url(../img/page4_font.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.page4_font3{
+  width:100%;
+  text-align: center;
+  position:absolute;
+  left:3.75vw;
+  top:65.4vh;
+  color:#666;
+  font-size: 1.3rem;
+}
+.dog_bg{
+  width:28vw;
+  height: 22vh;
+  position:absolute;
+  left:39vw;
+  top:74vh;
+  text-align: center;
+  background: url(../img/page4_smallbg.png) no-repeat center center;
+  background-size: 100% 100%;
+  -webkit-animation: scalebg  1.5s ease-in-out 0s infinite;
+          animation: scalebg  1.5s ease-in-out 0s infinite;
+}
+.dog_bg img{
+  width:70%;
+  margin: 9.8vw auto;
+  position: static;
+}
